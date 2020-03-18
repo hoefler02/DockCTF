@@ -31,7 +31,9 @@ RUN \
 		pwntools \
 		pycryptodome \
 		requests \
-		scapy
+		scapy \
+	python -m pip install \
+		pwntools
 
 
 RUN \
