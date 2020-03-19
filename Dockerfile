@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.04
 MAINTAINER Michael Hoelfer <hoefler2002@gmail.com>
 
 RUN \
