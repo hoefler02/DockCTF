@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu
 MAINTAINER Michael Hoelfer <hoefler2002@gmail.com>
 
 RUN \
@@ -31,9 +31,7 @@ RUN \
 		pwntools \
 		pycryptodome \
 		requests \
-		scapy \
-	python -m pip install \
-		pwntools
+		scapy
 
 
 RUN \
@@ -46,5 +44,3 @@ RUN \
 	printf "set prompt \033[1;31m(gdb) \033[m" >> /root/.gdbinit
 
 RUN chsh -s /usr/bin/fish root
-
-
