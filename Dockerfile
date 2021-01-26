@@ -1,10 +1,13 @@
 FROM ubuntu
 MAINTAINER Michael Hoelfer <hoefler2002@gmail.com>
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN \
 	dpkg --add-architecture i386 && \
 	apt-get update && \
 	apt-get install -y \
+		apt-utils \
 		cmake \
 		ipython3 \
 		vim \
